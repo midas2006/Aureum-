@@ -18,13 +18,11 @@ export default function Header() {
         <div className="flex justify-between items-center py-3 sm:py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg p-2 mr-2 sm:mr-3">
-              <span className="font-bold text-lg sm:text-xl">A</span>
-            </div>
-            <div>
-              <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-white">Aureum</h1>
-              <p className="text-xs sm:text-sm text-gray-300">Web Development</p>
-            </div>
+            <img
+              src="https://kyejpmmlxhpzxzwadnlq.supabase.co/storage/v1/object/public/aureum-assets/aureum_logo_horizontal.png"
+              alt="Aureum Logo"
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
