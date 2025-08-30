@@ -16,13 +16,11 @@ export default function Footer() {
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-2">
             <div className="flex items-center mb-3 sm:mb-4">
-              <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg p-2 mr-2 sm:mr-3">
-                <span className="font-bold text-lg sm:text-xl">A</span>
-              </div>
-              <div>
-                <h3 className="text-lg sm:text-xl font-bold">Aureum</h3>
-                <p className="text-xs sm:text-sm text-gray-400">Web Development</p>
-              </div>
+              <img
+                src="https://kyejpmmlxhpzxzwadnlq.supabase.co/storage/v1/object/public/aureum-assets/aureum_logo_horizontal.png"
+                alt="Aureum Logo"
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-gray-300 mb-3 sm:mb-4 max-w-md text-sm sm:text-base leading-relaxed">
               U.S.-focused web development agency delivering fast, research-driven websites that convert visitors into customers.

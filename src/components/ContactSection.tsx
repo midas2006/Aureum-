@@ -94,11 +94,23 @@ export default function ContactSection() {
               
               <div>
                 <h3 className="font-semibold text-white mb-2 text-base sm:text-lg">What Happens Next?</h3>
-                <ul className="space-y-1 sm:space-y-2 text-sm sm:text-base">
-                  <li>• We'll review your project requirements</li>
-                  <li>• Schedule a consultation call within 24 hours</li>
-                  <li>• Provide a detailed project proposal</li>
-                  <li>• Start building your website</li>
+                <ul className="space-y-2 text-sm sm:text-base">
+                  <li className="flex items-start">
+                    <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></div>
+                    <span>We'll review your project requirements</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></div>
+                    <span>Schedule a consultation call within 24 hours</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></div>
+                    <span>Provide a detailed project proposal</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3 mt-1.5 flex-shrink-0"></div>
+                    <span>Start building your website</span>
+                  </li>
                 </ul>
               </div>
             </div>
