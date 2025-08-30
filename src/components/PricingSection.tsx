@@ -4,7 +4,7 @@ import { Check, Star } from 'lucide-react';
 const packages = [
   {
     name: 'Landing Page',
-    price: '$399.99',
+    price: '$399',
     audience: 'Startups and lead generation campaigns',
     features: [
       'Single conversion-focused page',
@@ -19,7 +19,7 @@ const packages = [
   },
   {
     name: 'One-Page Site',
-    price: '$999.99',
+    price: '$999',
     audience: 'Complete business presence on one scrollable page',
     features: [
       'Multi-section single page',
@@ -35,7 +35,7 @@ const packages = [
   },
   {
     name: 'Multi-Page Site',
-    price: '$1,199.99',
+    price: '$1,199',
     audience: 'Full-featured website for established businesses',
     features: [
       'Up to 7 custom pages',
@@ -51,7 +51,7 @@ const packages = [
   },
   {
     name: 'Booking System',
-    price: '$1,299.99',
+    price: '$1,299',
     audience: 'Appointment scheduling for service businesses',
     features: [
       'Calendar integration',
@@ -146,14 +146,14 @@ export default function PricingSection() {
               <ul className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
                 {pkg.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start text-xs sm:text-sm text-gray-300">
-                    <Check size={14} className="text-green-400 mt-0.5 mr-2 flex-shrink-0" />
+                    <Check size={14} className="text-yellow-400 mt-0.5 mr-2 flex-shrink-0" />
                     <span className="leading-relaxed">{feature}</span>
                   </li>
                 ))}
               </ul>
               
               <div className="space-y-1 sm:space-y-2 mb-4 sm:mb-6 text-xs sm:text-sm text-gray-400">
-                <div className="font-medium text-blue-400">{pkg.delivery}</div>
+                <div className="font-medium text-gray-300">{pkg.delivery}</div>
                 <div>{pkg.revisions}</div>
                 {pkg.training && <div>{pkg.training}</div>}
                 {pkg.support && <div>{pkg.support}</div>}
@@ -164,7 +164,7 @@ export default function PricingSection() {
                 className={`w-full py-3 px-4 rounded-lg font-semibold transition-colors min-h-[44px] text-sm sm:text-base ${
                   pkg.popular 
                     ? 'bg-yellow-400 hover:bg-yellow-500 text-gray-900'
-                    : 'bg-blue-600 hover:bg-blue-700 text-white'
+                    : 'bg-yellow-400 hover:bg-yellow-500 text-gray-900'
                 }`}
               >
                 Get Started

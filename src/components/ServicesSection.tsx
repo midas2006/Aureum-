@@ -53,8 +53,8 @@ export default function ServicesSection() {
             const IconComponent = service.icon;
             return (
               <div key={index} className="bg-gray-900 rounded-xl border border-gray-700 p-4 sm:p-6 hover:shadow-lg hover:border-gray-600 transition-all">
-                <div className="bg-blue-900/30 w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                  <IconComponent className="text-blue-400" size={20} />
+                <div className="bg-yellow-900/30 w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                  <IconComponent className="text-yellow-400" size={20} />
                 </div>
                 
                 <h3 className="text-lg sm:text-xl font-bold text-white mb-2 leading-tight">{service.title}</h3>
@@ -63,7 +63,7 @@ export default function ServicesSection() {
                 <ul className="space-y-1.5 sm:space-y-2">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-xs sm:text-sm text-gray-400">
-                      <div className="w-1.5 h-1.5 bg-green-400 rounded-full mr-2 flex-shrink-0"></div>
+                      <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-2 flex-shrink-0"></div>
                       {feature}
                     </li>
                   ))}
